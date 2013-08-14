@@ -10,3 +10,8 @@ var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
+fs.readFile('index.html', function(err, data){
+if (err) throw err;
+console.log(data);
+});
