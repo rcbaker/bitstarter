@@ -3,7 +3,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World2!');
+  response.send('Hello World 21 and More!');
 });
 
 var port = process.env.PORT || 8080;
@@ -11,7 +11,3 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
-fs.readFile('index.html', function(err, data){
-if (err) throw err;
-console.log(data);
-});
