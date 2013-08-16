@@ -1,20 +1,16 @@
+//Homework 3 our first JS coding modification assignment
+
 var express = require('express');
-var app = express();
-app.use(express.logger());
+var fs = require('fs');
+
+var data = fs.readFileSync("index.html", "utf-8");
+
+var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-   response.send('Hello World 21 and More!');
+   response.send(data);
 });
 
-//fs.readFile('index.html',['r'], function (err, data) {
-  //  if (err) throw err;
-    //console.log(data);
-//});
-
-//fs.writeFile('message.txt', 'Hello Node',function (err){
-  //  if (err) throw err;
-   // console.log('index.html');
-//});
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
