@@ -1,14 +1,16 @@
-//Homework 3 our first JS coding modification assignment
-
 var express = require('express');
 var fs = require('fs');
+var htmlfile ="index.html";
 
-var data = fs.readFileSync("index.html", "utf-8");
+//comment out the first round of read file changes in case we need to go back.
+//var data = fs.readFileSync("index.html", "utf-8");
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-   response.send(data);
+    var html = fs.readFileSync(htmlfile).toString();
+//app.get('/', function(request, response) {
+    response.send(html);
 });
 
 
