@@ -11,7 +11,7 @@
     <script scr="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2bootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
-	  rel="stylesheet" type="text/css">
+	    rel="stylesheet" type="text/css">
     <style type="text/css">
       
       /*Large desktop */
@@ -39,6 +39,7 @@
         border-top: 1px white solid:
       }
       }
+	  
       /*All form factors */
       
       /*Main body and headings */
@@ -49,8 +50,13 @@
         font-family:'Ubuntu', Helvetica, Arial, sans-serif;
         text-align:center;
       }
-      p {
-        font-size: 18px;
+      p.lead {
+        padding-top: 1.5%;
+		font-size: 24px;
+		line-height: 30px;
+	  }
+		p {
+		font-size: 18px;
         line-height: 24px;
       }
       
@@ -69,7 +75,7 @@
        text-align: center;
       }
       .statistics h3, .statistics p {
-      text-align:center;
+      color:white;
       }
       
       /*Marketing Copy and Footer */
@@ -86,7 +92,7 @@
         text-align: center;
       }
       .footer p {
-        font-size:11px;
+        font-size: 11px;
       }
       .footer a {
       color: #ccccff;
@@ -129,25 +135,26 @@
        <div class="span12">
 	 <h1>Product</h1>
 	 </div>
-       </div>
-     <div class="row-fluid subheading">
+    </div>
+   <div class="row-fluid subheading">
        <div class="span12">
 	 <!-- Special tyopgraphy from Bootstrap fro lead paragraph -->
 	 <!-- http://twitter.github.io/bootstrap/base-css.html#typgraphy -->
 	 <p class="lead">One sentence description.</p>
 	 </div>
-       </div>
+    </div>
        </div class="row-fluid pitch">
-       <img class="img-polaroid" src="http://placehold.it/480x300">
-       
-	</div>
-
+       </div class="span5 offset1 video">
+       <img class="img-polaroid" src="http://placehold.it/480x300">     
+	 </div>
+     
 	<!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
 	<div class="span5 actions">
 	  <div class="span8 offset2">
 	    <div class="statistics">
 	      <div class="span4">
-		<div class= "linediv-c">
+          <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
+		<div class= "linediv-l">
 		  <h3>1000</h3> <p>backers</p>
 		  </div>
 		</div>
@@ -184,8 +191,6 @@
 	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
 	  </div>
 	</div>
-       </div>
-
        <!-- Beyond this part the marketing copy begins. -->
        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
        <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
@@ -194,7 +199,7 @@
        <div class="row-fluid section1">
 	 <div class="span5 offset1 asset">
 	   <img class="img-poloroid" src="http://placehold.it/480x300">
-	   </div>
+	 </div>
 	 <div class="span5 copy">
 	   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elict.  Doec
 	     porta, dui sagittis hendreit rutrum, nuc leo tempus nisl, eu
@@ -277,11 +282,10 @@
 	    By-SA 3.0
 	    </a>, without all the cruft that would otherwise be
 	      put at the bottom of this page. </p>
-	</div>
+	   </div>
       </div>
     </div>
   </body>
 </html>
-
 
 
